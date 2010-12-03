@@ -24,7 +24,7 @@ colors
 
 setopt prompt_subst
 PROMPT='
-%{$fg_bold[green]%}%n%{$reset_color%} %{$fg_bold[white]%}on%{$reset_color%} %{$fg_bold[cyan]%}%m%{$reset_color%}${vcs_info_msg_0_}
+%{$fg_bold[green]%}%n%{$reset_color%} %{$fg_bold[white]%}on%{$reset_color%} %{$fg_bold[cyan]%}%m%{$reset_color%}%{$fg_bold[yellow]%}${vcs_info_msg_0_}%{$reset_color%}
 %{$fg_bold[blue]%}${PWD/#$HOME/~}%{$reset_color%} %# '
 
 autoload -Uz vcs_info
