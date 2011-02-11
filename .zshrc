@@ -1,18 +1,23 @@
 
 # from macports
-source ~/.profile
+[[ -s "$HOME/.profile" ]] && source ~/.profile
 
-export PATH="/usr/local/mysql/bin:/Users/draynes/bin:$PATH"
+export PATH="/usr/local/mysql/bin:~/bin:$PATH"
 export EDITOR="emacsclient -c"
 
 # add the perlbrew paths
-source /Users/draynes/perl5/perlbrew/etc/bashrc
+[[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source ~/perl5/perlbrew/etc/bashrc
 
 # add the rvm paths
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _complete _ignored
+
+# swiped and modified from http://stackoverflow.com/questions/171563/whats-in-your-zshrc/171564#171564
+# case insensitive completion
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
+
 zstyle :compinstall filename '/Users/draynes/.zsh/.zshrc'
 
 autoload -Uz compinit
