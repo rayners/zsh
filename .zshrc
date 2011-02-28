@@ -2,7 +2,7 @@
 # from macports
 [[ -s "$HOME/.profile" ]] && source ~/.profile
 
-export PATH="/usr/local/mysql/bin:~/bin:$PATH"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/mysql/bin:~/bin:$PATH"
 export EDITOR="emacsclient -c"
 
 # add the perlbrew paths
